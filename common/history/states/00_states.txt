@@ -30023,7 +30023,6 @@
 		add_homeland = cu:japanese
 		add_homeland = cu:ainu
 		add_claim = c:JAP
-		effect_low_devastation = yes
 	}
 	s:STATE_TOHOKU = {
 		create_state = {
@@ -30052,7 +30051,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_medium_devastation = yes
+		#effect_low_devastation = yes
 	}
 	s:STATE_KANTO = {
 		create_state = {
@@ -30071,7 +30070,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_immense_devastation = yes
+		effect_high_devastation = yes
 	}
 	s:STATE_CHUBU = {
 		create_state = {
@@ -30098,7 +30097,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_immense_devastation = yes
+		effect_high_devastation = yes
 	}
 	s:STATE_KANSAI = {
 		create_state = {
@@ -30118,7 +30117,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_high_devastation = yes
+		#effect_low_devastation = yes
 	}
 	s:STATE_KYUSHU = {
 		create_state = {
@@ -30141,7 +30140,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_total_devastation = yes
+		#effect_high_devastation = yes
 	}
 	s:STATE_RYUKYU_ISLANDS = {
 		create_state = {
@@ -30169,7 +30168,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_total_devastation = yes
+		#effect_medium_devastation = yes
 	}
 	s:STATE_SHIKOKU = {
 		create_state = {
@@ -30183,7 +30182,7 @@
 			}
 		}
 		add_homeland = cu:japanese
-		effect_immense_devastation = yes
+		#effect_medium_devastation = yes
 	}
 	s:STATE_LHASA = {
 		create_state = {
@@ -45097,7 +45096,7 @@
 				x017E3C
 			}
 		}
-		effect_high_devastation = yes
+		#effect_high_devastation = yes
 		add_homeland = cu:south_german
 	}
 	s:STATE_TYROL = {
@@ -45125,7 +45124,7 @@
 				xF0E0C0
 			}
 		}
-		effect_high_devastation = yes
+		#effect_high_devastation = yes
 		add_homeland = cu:south_german
 	}
 	s:STATE_AUSTRIA = {

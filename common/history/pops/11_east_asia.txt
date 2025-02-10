@@ -875,11 +875,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = ainu
-				size = 855387
+				size = 16000
 			}
 			create_pop = {
 				culture = japanese
-				size = 2419010
+				size = 3488000
 			}
 		}
 		region_state:RUS = {
@@ -902,7 +902,7 @@
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 5597232
+				size = 6257232
 			}
 		}
 	}
@@ -911,7 +911,7 @@
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 26873619
+				size = 18873619
 			}
 		}
 	}
@@ -938,7 +938,7 @@
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 7344668
+				size = 9344668
 			}
 			create_pop = {
 				culture = micronesian
@@ -976,7 +976,7 @@
 			create_pop = {
 				culture = japanese
 				religion = shinto
-				size = 2304123
+				size = 4194123
 			}
 		}
 	}
