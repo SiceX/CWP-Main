@@ -289,8 +289,9 @@ building_hospitals = {
 	production_method_groups = {
 		pmg_base_hospitals
 		pmg_treatments
+		pmg_ambulances
 	}
-	required_construction = construction_cost_high
+	required_construction = construction_cost_medium
 }
 
 building_slums = {

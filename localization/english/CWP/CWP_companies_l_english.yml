@@ -34,3 +34,11 @@ company_general_electric: "General Electric"
 company_john_deere: "John Deere"
 company_weyerhaeuser: "Weyerhaeuser"
 company_westinghouse_corp: "Westinghouse Electric Corporation"
+
+
+### JAPAN ###
+company_sony: "Sony"
+company_toyota: "Toyota"
+company_nippon_steel: "Nippon Steel"
+company_mitsubishi: "Mitsubishi"
+company_hitachi: "Hitachi"

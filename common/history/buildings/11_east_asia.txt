@@ -3967,7 +3967,8 @@
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					company={
+					    type="nippon_steel"
 						country="c:JAP"
 						levels=11
 					}
@@ -4740,7 +4741,8 @@
 			create_building={
 				building="building_steelworks"
 				add_ownership={
-					country={
+					company={
+					    type=company_nippon_steel
 						country="c:JAP"
 						levels=10
 					}
@@ -4839,9 +4841,10 @@
 			create_building={
 				building="building_electronics_manufactories"
 				add_ownership={
-					country={
+					company={
+						type=company_sony
 						country="c:JAP"
-						levels=2
+						levels=5
 					}
 				}
 				reserves=1
@@ -4965,9 +4968,10 @@
 			create_building={
 				building="building_tool_manufactories"
 				add_ownership={
-					country={
+					company={
+						type=company_hitachi
 						country="c:JAP"
-						levels=11
+						levels=15
 					}
 				}
 				reserves=1
@@ -5009,9 +5013,10 @@
 			create_building={
 				building="building_automobile_manufactories"
 				add_ownership={
-					country={
+					company={
+						type=company_toyota
 						country="c:JAP"
-						levels=2
+						levels=10
 					}
 				}
 				reserves=1
@@ -5234,7 +5239,8 @@
 			create_building={
 				building="building_steelworks"
 				add_ownership={
-					country={
+					company={
+					    type=company_nippon_steel
 						country="c:JAP"
 						levels=10
 					}
@@ -5624,11 +5630,12 @@
 			}
 			create_building={
 				building="building_shipyards"
-				add_ownership={
-					country={
+				add_ownership = {
+				    company={
+						type=company_mitsubishi
 						country="c:JAP"
-						levels=3
-					}
+						levels=5
+				    }
 				}
 				reserves=1
 				activate_production_methods={ "pm_cargo_ships" "pm_no_automation" }
@@ -6124,7 +6131,8 @@
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
-					country={
+					company={
+					    type=company_nippon_steel
 						country="c:JAP"
 						levels=5
 					}

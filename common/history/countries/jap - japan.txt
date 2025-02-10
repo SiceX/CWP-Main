@@ -31,6 +31,7 @@
 			nationalization = public_utility_companies
 			monetaryPolicy = independent_monetary_policy
 			wmds = no_wmds
+			welfare = income_security
 			freeSpeech = censorship
 			laborRights = workplace_safety_standards
 			childrensRights = compulsory_education
@@ -51,7 +52,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 2
+			level = 3
 		}
 		set_institution_investment_level = {
 			institution = institution_criminal_justice_system
@@ -60,6 +61,40 @@
 		set_institution_investment_level = {
 			institution = institution_health_system
 			level = 2
+		}
+		set_institution_investment_level = {
+			institution = institution_corporate_affairs
+			level = 3
+		}
+
+		add_company = company_type:company_toyota
+		company:company_toyota = {
+			set_company_establishment_date = 1937.9.2
+			set_company_state_region = s:STATE_CHUBU
+		}
+
+		add_company = company_type:company_sony
+		company:company_sony = {
+			set_company_establishment_date = 1936.9.2
+			set_company_state_region = s:STATE_KANTO
+		}
+
+		add_company = company_type:company_mitsubishi
+		company:company_mitsubishi = {
+			set_company_establishment_date = 1936.9.2
+			set_company_state_region = s:STATE_KANTO
+		}
+
+		add_company = company_type:company_hitachi
+		company:company_hitachi = {
+			set_company_establishment_date = 1936.9.2
+			set_company_state_region = s:STATE_KANTO
+		}
+
+		add_company = company_type:company_nippon_steel
+		company:company_nippon_steel = {
+			set_company_establishment_date = 1936.9.2
+			set_company_state_region = s:STATE_KANTO
 		}
 	}
 }
