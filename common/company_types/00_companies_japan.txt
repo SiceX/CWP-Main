@@ -89,6 +89,7 @@ company_sony = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
+
 #  Toyota
 company_toyota = {
     # Add icons later
@@ -181,6 +182,7 @@ company_hitachi = {
     }
 }
 
+
 # Nippon Steel
 company_nippon_steel = {
 	icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
@@ -228,49 +230,250 @@ company_nippon_steel = {
 	}
 }
 
-# Nippon Steel
-company_nippon_steel = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/american_carnegie_steel.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+#  Honda
+company_honda = {
+    icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
-	flavored_company = yes
+    flavored_company = yes
 
-	building_types = {
-		building_steel_mills
-		building_iron_mine
-		building_coal_mine
-	}
+    building_types = {
+        building_automobile_manufactories
+        building_electronics_manufactories
+    }
 
-	potential = {
-		has_interest_marker_in_region = region_new_england
-	}
+    potential = {
+        has_interest_marker_in_region = region_japan
+    }
 
-	attainable = {
-		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-			any_scope_state = {
-				state_region = s:STATE_PENNSYLVANIA
-			}
-		}
-	}
+    possible = {
+        any_scope_state = {
+            state_region = s:STATE_KANTO
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_automobile_manufactories
+                level >= 5
+            }
+        }
+    }
 
-	possible = {
-		any_scope_state = {
-			state_region = s:STATE_PENNSYLVANIA
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_steel_mills
-				level >= 3
-			}
-		}
-		has_technology_researched = open_hearth_process
-	}
+    prosperity_modifier = {
+        building_automobile_manufactories_throughput_add = 0.1
+        building_electronics_manufactories_throughput_add = 0.1
+    }
 
-	prosperity_modifier = {
-		building_railway_throughput_add = 0.1
-		building_shipyards_throughput_add = 0.1
-	}
+    ai_weight = {
+        value = 3
+    }
+}
 
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
+#  Nintendo
+company_nintendo = {
+    icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_luxury_manufacturing.dds"
+
+    flavored_company = yes
+
+    building_types = {
+        building_electronics_manufactories
+        building_computer_manufactories
+    }
+
+    potential = {
+        has_interest_marker_in_region = region_japan
+    }
+
+    possible = {
+        any_scope_state = {
+            state_region = s:STATE_KANSAI
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_electronics_manufactories
+                level >= 5
+            }
+        }
+        has_law = law_type:law_compulsory_primary_school
+    }
+
+    prosperity_modifier = {
+        building_electronics_manufactories_throughput_add = 0.15
+        country_pop_happiness_mult = 0.05
+    }
+
+    ai_weight = {
+        value = 4
+    }
+}
+
+# SoftBank
+company_softbank = {
+    icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_communications.dds"
+
+    flavored_company = yes
+
+    building_types = {
+        building_media_industry
+        building_telecommunications
+        building_electronics_manufactories
+        building_skyscraper
+    }
+
+    potential = {
+        has_interest_marker_in_region = region_japan
+    }
+
+    possible = {
+        any_scope_state = {
+            state_region = s:STATE_TOKYO
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_telecommunications
+                level >= 3
+            }
+        }
+        has_law = law_type:law_compulsory_secondary_school
+    }
+
+    prosperity_modifier = {
+        building_telecommunications_throughput_add = 0.15
+        country_research_innovation_add = 50
+    }
+
+    ai_weight = {
+        value = 3
+    }
+}
+
+# Uniqlo
+company_uniqlo = {
+    icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_luxury_manufacturing.dds"
+
+    flavored_company = yes
+
+    building_types = {
+        building_textile_manufactories
+    }
+
+    potential = {
+        has_interest_marker_in_region = region_japan
+    }
+
+    attainable = {
+        has_technology_researched = modern_fashion
+        any_scope_building = {
+            is_building_type = building_textile_mills
+            level >= 10
+        }
+    }
+
+    possible = {
+        any_scope_state = {
+            state_region = s:STATE_KANTO
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_luxury_clothes_factories
+                level >= 5
+            }
+        }
+        any_scope_pop = {
+            strata = rich
+            pop_employment_building_group = bg_urban_facilities
+            percent >= 0.3
+        }
+    }
+
+    prosperity_modifier = {
+        building_textile_mills_throughput_add = 0.1
+        building_luxury_clothes_factories_throughput_add = 0.1
+        country_pop_happiness_mult = 0.03
+    }
+
+    ai_weight = {
+        value = 3
+    }
+}
+
+# Nissan
+company_nissan = {
+    icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+    flavored_company = yes
+
+    building_types = {
+        building_automobile_manufactories
+        building_electronics_manufactories
+    }
+
+    potential = {
+        has_interest_marker_in_region = region_japan
+    }
+
+    possible = {
+        any_scope_state = {
+            state_region = s:STATE_KANTO
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_automobile_manufactories
+                level >= 5
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        building_automobile_manufactories_throughput_add = 0.1
+    }
+
+    ai_weight = {
+        value = 3
+    }
+}
+
+
+# Takeda Pharmaceutical
+company_takeda = {
+    icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_chemical_industries.dds"
+
+    flavored_company = yes
+
+    building_types = {
+        building_chemical_plants
+        building_pharmaceutical_industry
+    }
+
+    potential = {
+        has_interest_marker_in_region = region_japan
+    }
+
+    attainable = {
+        has_technology_researched = modern_pharmaceuticals
+        has_technology_researched = modern_biotechnology
+    }
+
+    possible = {
+        any_scope_state = {
+            state_region = s:STATE_KANSAI
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_pharmaceutical_industry
+                level >= 3
+            }
+        }
+        any_scope_building = {
+            is_building_type = building_university
+            level >= 3
+        }
+    }
+
+    prosperity_modifier = {
+        building_pharmaceutical_industry_throughput_add = 0.15
+        country_research_innovation_add = 50
+    }
+
+    ai_weight = {
+        value = 4
+    }
 }

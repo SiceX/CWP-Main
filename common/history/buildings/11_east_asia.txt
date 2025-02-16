@@ -4608,7 +4608,8 @@
 			create_building={
 				building="building_chemical_plants"
 				add_ownership={
-					country={
+					company={
+					    type="company_takeda"
 						country="c:JAP"
 						levels=7
 					}
@@ -4764,7 +4765,8 @@
 			create_building={
 				building="building_pharmaceutical_industry"
 				add_ownership={
-					country={
+					company={
+					    type="company_takeda"
 						country="c:JAP"
 						levels=10
 					}
@@ -5461,7 +5463,8 @@
 			create_building={
 				building="building_pharmaceutical_industry"
 				add_ownership={
-					country={
+					company={
+					    type="company_takeda"
 						country="c:JAP"
 						levels=5
 					}

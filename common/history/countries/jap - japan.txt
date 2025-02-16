@@ -96,5 +96,11 @@
 			set_company_establishment_date = 1936.9.2
 			set_company_state_region = s:STATE_KANTO
 		}
+
+		add_company = company_type:company_takeda
+		company:company_takeda = {
+			set_company_establishment_date = 1925.1.1
+			set_company_state_region = s:STATE_KANTO
+		}
 	}
 }
