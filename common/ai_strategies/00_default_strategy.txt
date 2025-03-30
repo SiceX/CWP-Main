@@ -79,6 +79,8 @@ ai_strategy_default = {
 		}
 	}
 
+	# How much construction output should the AI aim for
+	# Using this value in other strategies will function additively
 	wanted_construction_output = {
 		value = 10 # Accounts for the 10 free construction from base modifiers
 
@@ -109,7 +111,7 @@ ai_strategy_default = {
 				total_population >= 2000000
 			}
 			add = 10
-		}		
+		}
 
 		# Add a baseline for high rank
 		if = {
@@ -137,18 +139,8 @@ ai_strategy_default = {
 			multiply = 1.25
 		}
 
-		if = {
-			limit = {
-				OR = {
-					has_journal_entry = je_meiji_restoration
-					has_journal_entry = je_meiji_main
-				}
-			}			
-			multiply = 1.5
-		}
-
 		min = 10
-		max = 1000
+		max = 10000
 	}
 
 	# How many levels of barracks should the AI have
