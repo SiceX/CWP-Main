@@ -1185,6 +1185,12 @@ indian_partition.50 = {
 		ai_chance = {
 			base = 100
 		}
+		
+		immediate = {
+			activate_law = law_type:law_parliamentary
+			activate_law = law_type:law_technocrats
+			activate_law = law_type:law_oligarchy
+		}
 	}
 }
 
